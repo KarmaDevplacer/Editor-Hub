@@ -41,7 +41,7 @@ local statusIcon = Instance.new("ImageLabel")
 statusIcon.Size = UDim2.new(0, 50, 0, 50)
 statusIcon.Position = UDim2.new(0.5, -25, 0.7, 0)
 statusIcon.BackgroundTransparency = 1
-statusIcon.Image = "rbxassetid://1234567890" -- AQUI pones la imagen de palomita o error
+statusIcon.Image = "https://raw.githubusercontent.com/KarmaDevplacer/Editor-Hub/refs/heads/main/37%20sin%20t%C3%ADtulo_20250426141713.png" -- AQUI pones la imagen de palomita o error
 statusIcon.Parent = mainFrame
 
 -- Animación de aparición
@@ -57,11 +57,11 @@ appearTween.Completed:Connect(function()
 
     if compatible then
         subtitle.Text = "Compatible: ¡Listo para usar!"
-        statusIcon.Image = "rbxassetid://ID_DE_PALOMITA_VERDE"
+        statusIcon.Image = ""
         -- (opcional) efecto de resplandor verde
     else
         subtitle.Text = "Error: Este juego no es compatible."
-        statusIcon.Image = "rbxassetid://ID_DE_ERROR_ROJO"
+        statusIcon.Image = "https://raw.githubusercontent.com/KarmaDevplacer/Editor-Hub/refs/heads/main/37%20sin%20t%C3%ADtulo_20250426145246.png"
         -- (opcional) efecto de parpadeo rojo
     end
 end)
